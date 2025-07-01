@@ -6,18 +6,18 @@ const Features = () => {
   const features = [
     {
       icon: <FaMapMarkedAlt className="text-4xl text-amber-500" />,
-      title: "Expertly Crafted Itineraries",
-      description: "Our safari experts design journeys that capture the essence of each destination."
+      title: "Flight Bookings",
+      description: "Domestic and international flights at competitive rates with flexible options."
     },
     {
       icon: <FaUserFriends className="text-4xl text-amber-500" />,
-      title: "Small Group Experiences",
-      description: "Enjoy personalized attention with our small group sizes (max 8 travelers)."
+      title: "Hotel Reservations",
+      description: "Handpicked stays—from luxury resorts to cozy budget lodges."
     },
     {
       icon: <FaShieldAlt className="text-4xl text-amber-500" />,
-      title: "Safety First Approach",
-      description: "Your safety is our priority with trained guides and comprehensive protocols."
+      title: "Visa Assistance",
+      description: "End-to-end guidance to help you secure your visa quickly and easily."
     }
   ];
 
@@ -30,7 +30,7 @@ const Features = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto"></div>
           <p className="text-lg text-gray-600 mt-6">
-            We provide exceptional safari experiences with attention to every detail
+           We offer unforgettable travel experiences, completely hassle-free.
           </p>
         </div>
 

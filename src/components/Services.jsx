@@ -20,19 +20,16 @@ const Services = () => {
         title: "Flight Bookings",
         description:"Witness the Great Migration in Tanzania's iconic national park",
         duration: "7 Days",
-        price: "$2,499"
       },
       {
         title: "Flight Bookings",
         description: "Explore Botswana's unique wetland ecosystem by mokoro",
         duration: "5 Days",
-        price: "$1,899"
       },
       {
         title: "Flight Bookings",
         description: "Experience Kenya's premier wildlife destination",
         duration: "6 Days",
-        price: "$2,199"
       }
     ],
     hotelReservation: [
@@ -40,19 +37,16 @@ const Services = () => {
         title: "Hotel Reservations",
         description: "Encounter mountain gorillas in Rwanda's Volcanoes National Park",
         duration: "4 Days",
-        price: "$3,500"
       },
       {
         title: "Hotel Reservations",
         description: "Spot lions, leopards, rhinos, elephants and buffalo",
         duration: "5 Days",
-        price: "$2,200"
       },
       {
         title: "Hotel Reservations",
         description: "Discover Africa's incredible bird diversity",
         duration: "8 Days",
-        price: "$2,800"
       }
     ],
     visaAssistance: [
@@ -60,19 +54,16 @@ const Services = () => {
         title: "Visa Assistance",
         description: "Experience the wild without sacrificing comfort",
         duration: "Varies",
-        price: "From $350/night"
       },
       {
         title: "Visa Assistance",
         description:"Move with the wildlife in our exclusive mobile camps",
         duration: "5+ Days",
-        price: "From $450/night"
       },
       {
         title: "Visa Assistance",
         description: "Secluded luxury in the heart of the wilderness",
         duration: "Varies",
-        price: "From $550/night"
       }
     ],
   
@@ -81,19 +72,16 @@ const Services = () => {
       title: "Custom Travel Packages",
       description: "Tailor-made itineraries for Corporate Groups",
       duration: "1-2 Days",
-      price: "$250"
     },
     {
       title: "Custom Travel Packages",
       description: "Tailor-made itineraries for Families && Couples",
       duration: "1 Day",
-      price: "$180"
     },
     {
       title: "Custom Travel Packages",
       description: "Tailor-made itineraries for solo travelers",
       duration: "3 Days",
-      price: "$1,200"
     }
   ],
   specialTrips: [
@@ -101,19 +89,16 @@ const Services = () => {
       title: "Special Trips",
       description: "Honeymoons, destination weddings, religious pilgrimages, school trips, and more",
       duration: "1-2 Days",
-      price: "$250"
     },
     {
       title: "Special Trips",
       description: "Honeymoons, destination weddings, religious pilgrimages, school trips, and more",
       duration: "1 Day",
-      price: "$180"
     },
     {
       title: "Special Trips",
       description: "Honeymoons, destination weddings, religious pilgrimages, school trips, and more",
       duration: "3 Days",
-      price: "$1,200"
     }
   ],
   tourGuidance: [
@@ -121,19 +106,16 @@ const Services = () => {
       title: "Tour Guidance",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lorem, semper molestie molestie ac, lobortis non enim",
       duration: "1-2 Days",
-      price: "$250"
     },
     {
       title: "Tour Guidance",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lorem, semper molestie molestie ac, lobortis non enim.",
       duration: "1 Day",
-      price: "$180"
     },
     {
       title: "Tour Guidance",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lorem, semper molestie molestie ac, lobortis non enim",
       duration: "3 Days",
-      price: "$1,200"
     }
   ]
 };

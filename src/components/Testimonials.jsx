@@ -6,25 +6,39 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      location: "Serengeti Safari, Tanzania",
-      content: "Our safari with Safari Trips exceeded all expectations. The guides were incredibly knowledgeable, the accommodations were luxurious, and we saw all of the Big Five!",
+      name: "Ada & Chuka",
+      location: "Stress-Free Honeymoon in Zanzibar",
+      content: "We were overwhelmed with wedding planning, so we left the honeymoon to the experts. The travel agency booked us a dreamy 5-night stay in Zanzibar with oceanfront views, couples' spa, and private island tours. All we did was show up — everything else was flawless!",
       rating: 5
     },
     {
       id: 2,
-      name: "Michael Chen",
-      location: "Okavango Delta, Botswana",
-      content: "The attention to detail was remarkable. From the seamless airport transfers to the expertly planned game drives, everything was perfect. The mokoro experience was unforgettable!",
+      name: "Tope A.",
+      location: "My First Solo Trip – and I Didn’t Panic Once!",
+      content: "I wanted to travel solo to South Africa but didn’t know where to start. The agency helped me choose safe, fun spots and arranged airport pickups, tours, and even a SIM card. I felt safe and empowered the entire time. Already planning my next trip!",
       rating: 5
     },
     {
       id: 3,
-      name: "Emma Rodriguez",
-      location: "Masai Mara, Kenya",
-      content: "As a solo traveler, I felt completely safe and well taken care of. The group was small, the guide was fantastic, and I made friends for life. The Great Migration was truly spectacular.",
+      name: "The Okonkwo Family",
+      location: "Family Vacation That Didn’t End in Tears",
+      content: "We wanted a holiday where both our kids and grandparents could enjoy themselves. The agency put together a Dubai family package with kid-friendly parks, cultural tours, and wheelchair access for Grandma. Smooth, fun, and actually relaxing!",
       rating: 5
-    }
+    },
+    {
+      id: 4,
+      name: "Emeka U. Corporate Executive",
+      location: "Saved My Business Trip",
+      content: "My visa was delayed and I was losing hope. The travel agency fast-tracked the process, rebooked my flights, and got me to London just in time for a major pitch. Without them, I would’ve lost the deal!",
+      rating: 5
+    },
+    {
+      id: 5,
+      name: "ENgozi & Friends",
+      location: "Girls’ Getaway Done Right",
+      content: "We just wanted a fun, stress-free girls’ trip — no planning drama. The agency handled everything from Bali villa bookings to airport transfers and even sent us a packing list. It felt like a reality show vacation, minus the chaos.",
+      rating: 5
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

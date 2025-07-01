@@ -4,10 +4,10 @@ import { FaGlobeAfrica, FaUserFriends, FaStar, FaCalendarAlt } from 'react-icons
 
 const Stats = () => {
   const stats = [
-    { icon: <FaGlobeAfrica className="text-3xl text-amber-500" />, value: "12+", label: "African Countries" },
-    { icon: <FaUserFriends className="text-3xl text-amber-500" />, value: "10,000+", label: "Satisfied Travelers" },
+    { icon: <FaGlobeAfrica className="text-3xl text-amber-500" />, value: "150+", label: "Countries" },
+    { icon: <FaUserFriends className="text-3xl text-amber-500" />, value: "5000+", label: "Satisfied Travelers" },
     { icon: <FaStar className="text-3xl text-amber-500" />, value: "98%", label: "Positive Reviews" },
-    { icon: <FaCalendarAlt className="text-3xl text-amber-500" />, value: "15+", label: "Years of Experience" }
+    { icon: <FaCalendarAlt className="text-3xl text-amber-500" />, value: "10+", label: "Years of Experience" }
   ];
 
   return (
@@ -20,8 +20,7 @@ const Stats = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mb-6"></div>
             <p className="text-gray-300 mb-8">
-              With over a decade of experience, Safari Trips has become a leader in African safari adventures. 
-              Our commitment to excellence, sustainability, and authentic experiences sets us apart.
+             With over a decade of experience. Safari Trips custom-designs each journey to match your style, budget, and travel dreams.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
@@ -54,7 +53,7 @@ const Stats = () => {
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
                   <div className="text-white">
-                    <h3 className="font-bold">African Adventure</h3>
+                    <h3 className="font-bold">Adventure</h3>
                     <p className="text-sm text-amber-200">View Tour</p>
                   </div>
                 </div>
