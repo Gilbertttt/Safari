@@ -10,21 +10,31 @@ const Footer = () => {
     {
       title: 'Destinations',
       links: [
-        { name: 'Tanzania', href: '#' },
-        { name: 'Kenya', href: '#' },
-        { name: 'Botswana', href: '#' },
+        { name: 'London', href: '#' },
+        { name: 'Canada', href: '#' },
+        { name: 'United States of America ', href: '#' },
+        { name: 'Turkey ', href: '#' },
         { name: 'South Africa', href: '#' },
-        { name: 'Rwanda', href: '#' },
+        { name: 'Vietnam ', href: '#' },
+        { name: 'Egypt ', href: '#' },
+        { name: 'Morocco  ', href: '#' },
+        
+       
+       
       ]
     },
     {
-      title: 'Safari Types',
+      title: '',
       links: [
-        { name: 'Luxury Safaris', href: '#' },
-        { name: 'Family Safaris', href: '#' },
-        { name: 'Adventure Safaris', href: '#' },
-        { name: 'Photography Safaris', href: '#' },
-        { name: 'Honeymoon Safaris', href: '#' },
+        { name: 'France', href: '#' },
+         { name: 'Lithuania ', href: '#' },
+       { name: 'Japan ', href: '#' },
+        { name: 'Tanzania ', href: '#' },
+        { name: 'Spain', href: '#' },
+        { name: 'Brazil', href: '#' },
+        { name: 'Cameroon', href: '#' },
+        { name: 'China', href: '#' },
+        { name: 'Singapore', href: '#' },
       ]
     },
     {
@@ -70,7 +80,7 @@ const Footer = () => {
               <span className="ml-3 text-2xl font-bold">Safari Trips</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Creating unforgettable African safari experiences with a commitment to sustainability and authentic cultural encounters.
+             Crafting memorable travel experiences with a focus on affordability and genuine connections.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (

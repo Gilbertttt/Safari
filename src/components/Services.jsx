@@ -1,6 +1,25 @@
 // src/components/Services.jsx
 import React, { useState } from 'react';
 import { FaSafari, FaBinoculars, FaCampground, FaSun } from 'react-icons/fa';
+import Airplane from '../assets/images/sufyan-Qch0pTzNGaE-unsplash.jpg'
+import planeSeats from '../assets/images/jc-gellidon-1g3qVp7ynX4-unsplash.jpg'
+import flight from '../assets/images/omar-elsharawy-_ONvFZFaUXs-unsplash.jpg'
+import hotel1 from '../assets/images/yu-yi-tsai-UX_Pn1L2FkQ-unsplash.jpg'
+import hotel2 from '../assets/images/jo-max-nmbvTM7rS5Q-unsplash.jpg'
+import hotel3 from '../assets/images/mk-s-OGlpQis3cbQ-unsplash.jpg'
+import visa1 from '../assets/images/global-residence-index-LPdaW746WAw-unsplash.jpg'
+import visa2 from '../assets/images/my-spain-visa-sn0kpnmBHK0-unsplash.jpg'
+import visa3 from '../assets/images/global-residence-index-Cg3fyYZMQ58-unsplash.jpg'
+import packages1 from '../assets/images/david-kohler-VFRTXGw1VjU-unsplash.jpg'
+import packages2 from '../assets/images/raul-varzar-cDdEFZxtuZw-unsplash.jpg'
+import packages3 from '../assets/images/axp-photography-evqYZXPm3Tg-unsplash.jpg'
+import trips1 from '../assets/images/alev-takil-m-_UR4QD4As-unsplash.jpg'
+import trips2 from '../assets/images/jeffrey-workman-YvkH8R1zoQM-unsplash.jpg'
+import trips3 from '../assets/images/jason-leung-poI7DelFiVA-unsplash.jpg'
+import tour1 from '../assets/images/nick-fewings-C2zhShTnl5I-unsplash.jpg'
+import tour2 from '../assets/images/headway-5QgIuuBxKwM-unsplash.jpg'
+import tour3 from '../assets/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpg'
+
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState('flightBookings');
@@ -17,105 +36,123 @@ const Services = () => {
   const services = {
     flightBookings: [
       {
-        title: "Flight Bookings",
-        description:"Witness the Great Migration in Tanzania's iconic national park",
-        duration: "7 Days",
+        title: "",
+        description:"",
+        duration: "",
+        image: Airplane,
       },
       {
-        title: "Flight Bookings",
-        description: "Explore Botswana's unique wetland ecosystem by mokoro",
-        duration: "5 Days",
+        title: "",
+        description: "",
+        duration: "",
+         image: planeSeats,
       },
       {
-        title: "Flight Bookings",
-        description: "Experience Kenya's premier wildlife destination",
-        duration: "6 Days",
+        title: "",
+        description: "",
+        duration: "",
+        image: flight,
       }
     ],
     hotelReservation: [
       {
-        title: "Hotel Reservations",
-        description: "Encounter mountain gorillas in Rwanda's Volcanoes National Park",
-        duration: "4 Days",
+        title: "",
+        description: "",
+        duration: "",
+        image: hotel1
       },
       {
-        title: "Hotel Reservations",
-        description: "Spot lions, leopards, rhinos, elephants and buffalo",
-        duration: "5 Days",
+        title: "",
+        description: "",
+        duration: "",
+        image: hotel2
       },
       {
-        title: "Hotel Reservations",
-        description: "Discover Africa's incredible bird diversity",
-        duration: "8 Days",
+        title: "",
+        description: "",
+        duration: "",
+        image: hotel3
       }
     ],
     visaAssistance: [
       {
-        title: "Visa Assistance",
-        description: "Experience the wild without sacrificing comfort",
-        duration: "Varies",
+        title: "",
+        description: "",
+        duration: "",
+        image: visa1
       },
       {
-        title: "Visa Assistance",
-        description:"Move with the wildlife in our exclusive mobile camps",
-        duration: "5+ Days",
+        title: "",
+        description:"",
+        duration: "",
+        image: visa2
       },
       {
-        title: "Visa Assistance",
-        description: "Secluded luxury in the heart of the wilderness",
-        duration: "Varies",
+        title: "",
+        description: "",
+        duration: "",
+        image: visa3
       }
     ],
   
   customTravelPackages: [
     {
-      title: "Custom Travel Packages",
-      description: "Tailor-made itineraries for Corporate Groups",
-      duration: "1-2 Days",
+      title: "",
+      description: "",
+      duration: "",
+      image: packages1
     },
     {
-      title: "Custom Travel Packages",
-      description: "Tailor-made itineraries for Families && Couples",
-      duration: "1 Day",
+      title: "",
+      description: "",
+      duration: "",
+      image: packages2
     },
     {
-      title: "Custom Travel Packages",
-      description: "Tailor-made itineraries for solo travelers",
-      duration: "3 Days",
+      title: "",
+      description: "",
+      duration: "",
+      image: packages3
     }
   ],
   specialTrips: [
     {
-      title: "Special Trips",
-      description: "Honeymoons, destination weddings, religious pilgrimages, school trips, and more",
-      duration: "1-2 Days",
+      title: "",
+      description: "",
+      duration: "",
+      image: trips1
     },
     {
-      title: "Special Trips",
-      description: "Honeymoons, destination weddings, religious pilgrimages, school trips, and more",
-      duration: "1 Day",
+      title: "",
+      description: "",
+      duration: "",
+      image: trips2
     },
     {
-      title: "Special Trips",
-      description: "Honeymoons, destination weddings, religious pilgrimages, school trips, and more",
-      duration: "3 Days",
+      title: "",
+      description: "",
+      duration: "",
+      image: trips3
     }
   ],
   tourGuidance: [
     {
-      title: "Tour Guidance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lorem, semper molestie molestie ac, lobortis non enim",
-      duration: "1-2 Days",
+      title: "",
+      description: "",
+      duration: "",
+      image: tour1
     },
     {
-      title: "Tour Guidance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lorem, semper molestie molestie ac, lobortis non enim.",
-      duration: "1 Day",
+      title: "",
+      description: "",
+      duration: "",
+      image: tour2
     },
     {
-      title: "Tour Guidance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lorem, semper molestie molestie ac, lobortis non enim",
-      duration: "3 Days",
+      title: "",
+      description: "",
+      duration: "",
+      image: tour3
     }
   ]
 };
@@ -128,7 +165,7 @@ const Services = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto"></div>
           <p className="text-lg text-gray-600 mt-6">
-            Discover our handpicked selection of unforgettable African adventures
+           Explore our carefully curated range of travel services.
           </p>
         </div>
         
@@ -157,7 +194,9 @@ const Services = () => {
               key={index} 
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 group"
             >
-              <div className="h-48 bg-gradient-to-r from-amber-400 to-orange-400 relative">
+              <div className="h-48 relative">
+             <div  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${service.image})` }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                   <button className="px-4 py-2 bg-white text-amber-600 rounded-md font-medium hover:bg-gray-50 transition-colors">
                     View Details

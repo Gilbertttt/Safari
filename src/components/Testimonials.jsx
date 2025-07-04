@@ -8,7 +8,7 @@ const Testimonials = () => {
       id: 1,
       name: "Ada & Chuka",
       location: "Stress-Free Honeymoon in Zanzibar",
-      content: "We were overwhelmed with wedding planning, so we left the honeymoon to the experts. The travel agency booked us a dreamy 5-night stay in Zanzibar with oceanfront views, couples' spa, and private island tours. All we did was show up — everything else was flawless!",
+      content: "We were overwhelmed with wedding planning, so we left the honeymoon to the experts. The travel agency booked us a dreamy 5-night stay in Zanzibar with oceanfront views, couples' spa, and private island tours. All we did was show up everything else was flawless!",
       rating: 5
     },
     {
@@ -59,9 +59,6 @@ const Testimonials = () => {
             Traveler Stories
           </h2>
           <div className="w-20 h-1 bg-white mx-auto"></div>
-          <p className="text-amber-100 mt-6">
-            Hear from adventurers who've experienced our safaris
-          </p>
         </div>
         
         <div className="max-w-4xl mx-auto relative">
