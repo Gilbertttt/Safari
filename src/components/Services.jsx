@@ -1,7 +1,7 @@
 // src/components/Services.jsx
 import React, { useState } from 'react';
 import { FaSafari, FaBinoculars, FaCampground, FaSun } from 'react-icons/fa';
-import Airplane from '../assets/images/sufyan-Qch0pTzNGaE-unsplash.jpg'
+import Airplane from '../assets/images/ross-parmly-rf6ywHVkrlY-unsplash.jpg'
 import planeSeats from '../assets/images/jc-gellidon-1g3qVp7ynX4-unsplash.jpg'
 import flight from '../assets/images/omar-elsharawy-_ONvFZFaUXs-unsplash.jpg'
 import hotel1 from '../assets/images/yu-yi-tsai-UX_Pn1L2FkQ-unsplash.jpg'
