@@ -18,7 +18,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-amber-50 to-orange-50">
+    <section className="py-20 bg-gradient-to-r from-amber-50 to-orange-50" id='Community'>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="md:flex">

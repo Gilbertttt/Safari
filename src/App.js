@@ -11,7 +11,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="font-sans overflow-x-hidden">
+    <div className="font-sans overflow-x-hidden scroll-smooth">
       <Navbar />
       <main>
         <Home />

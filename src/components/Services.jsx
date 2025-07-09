@@ -157,7 +157,7 @@ const Services = () => {
   ]
 };
   return (
-    <section className="py-20 bg-gradient-to-b from-amber-50 to-orange-50">
+    <section className="py-20 bg-gradient-to-b from-amber-50 to-orange-50" id='Experiences'>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="font-bold text-4xl md:text-5xl mb-6 text-gray-900">
@@ -208,7 +208,7 @@ const Services = () => {
                   <h3 className="text-xl font-bold text-gray-900 group-hover:text-amber-600 transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <span className="bg-amber-100 text-amber-800 text-sm font-medium px-2 py-1 rounded">
+                  <span className="">
                     {service.price}
                   </span>
                 </div>

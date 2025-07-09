@@ -17,11 +17,11 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Destinations', href: '#destinations' },
-    { name: 'Tours', href: '#tours' },
-    { name: 'Travel Packages', href: '#travelPackages', },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+     { name: 'About', href: '#About' },
+    { name: 'Experiences', href: '#Experiences' },
+    { name: 'Testimonials', href: '#Testimonials' },
+    { name: 'Services', href: '#Services', },
+    { name: 'Community', href: '#Community' },
   ];
 
   return (
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center">
         {/* bg-gradient-to-r from-amber-500 to-orange-500  */}
           <div className="rounded-xl w-14 h-14 flex items-center justify-center">
-            <span className="text-white font-bold text-xl"><img src={logo}></img></span>
+            <span className="text-white font-bold text-xl"><img src={logo} alt='company logo'></img></span>
           </div>
           <span className="ml-3 text-2xl font-bold tracking-tight text-gray-900">Safari Trips</span>
         </div>
@@ -46,6 +46,12 @@ const Navbar = () => {
               key={item.name}
               href={item.href}
               className="font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector(item.href)?.scrollIntoView({
+                  behaviour: 'smooth'
+                });
+              }}
             >
               {item.name}
             </a>
