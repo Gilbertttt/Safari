@@ -176,7 +176,7 @@ const Services = () => {
               key={tab.id}
               className={`flex items-center px-6 py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
                 activeTab === tab.id
-                  ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white'
+                  ? 'bg-orange-500 text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100'
               }`}
               onClick={() => setActiveTab(tab.id)}
@@ -225,7 +225,7 @@ const Services = () => {
         </div>
         
         <div className="text-center mt-12">
-          <button className="px-8 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-1">
+          <button className="px-8 py-3 bg-orange-500 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-1">
             View All Tours
           </button>
         </div>

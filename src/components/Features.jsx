@@ -22,7 +22,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id='About'>
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="font-bold text-4xl md:text-5xl mb-6 text-gray-900">
@@ -54,7 +54,7 @@ const Features = () => {
         </div>
 
         <div className="flex justify-center mt-16">
-          <button className="px-8 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-1">
+          <button className="px-8 py-3 bg-orange-500 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-1">
             View All Features
           </button>
         </div>

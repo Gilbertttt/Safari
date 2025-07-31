@@ -22,7 +22,7 @@ const Newsletter = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="md:flex">
-            <div className="md:w-2/5 bg-gradient-to-r from-amber-500 to-orange-500 p-10 flex flex-col justify-center text-white">
+            <div className="md:w-2/5 bg-orange-500 p-10 flex flex-col justify-center text-white">
               <h3 className="text-3xl font-bold mb-4">Join Our Safari Community</h3>
               <p>Get exclusive offers and safari insights</p>
             </div>

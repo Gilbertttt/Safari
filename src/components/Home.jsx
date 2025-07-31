@@ -32,7 +32,7 @@ const Home = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-slide-up delay-200">
-            <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-1">
+            <button className="px-8 py-4 bg-orange-500 hover:bg-gray-900 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-1">
               Explore Tours
             </button>
             <button className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:-translate-y-1">
