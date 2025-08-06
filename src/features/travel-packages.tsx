@@ -1,4 +1,5 @@
 import React from 'react'
+import OptimizedImage from "../components/OptimizedImage"
 import familyTravel from "../assets/images/family-traveling.jpg"
 import groupTravel from "../assets/images/group-travel.jpg"
 import soloTravel from "../assets/images/solo-trips.jpg"
@@ -18,7 +19,12 @@ const TravelPackages = () => {
           {/* Sample Package Card */}
           <div className=" bg-white">
             <div className="relative cursor-pointer">
-                <img src={parentTravel} alt="Package 1" className="h-72 rounded-lg " />  
+                <OptimizedImage 
+                  src={parentTravel} 
+                  alt="Parent trips travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
             <div className="absolute bottom-0 flex items-center ">
               <h3 className="text-[30px] font-semibold p-5 text-white">Parent Trips</h3>
             </div>
@@ -26,7 +32,12 @@ const TravelPackages = () => {
           </div>
           <div className=" bg-white">
             <div className="relative cursor-pointer">
-                <img src={honeymoon} alt="Package 1" className="h-72 rounded-lg " />  
+                <OptimizedImage 
+                  src={honeymoon} 
+                  alt="Honeymoon travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
             <div className="absolute bottom-0 flex items-center ">
               <h3 className="text-[30px] font-semibold p-5 text-white">Honeymoon</h3>
             </div>
@@ -34,7 +45,12 @@ const TravelPackages = () => {
           </div>
           <div className=" bg-white">
             <div className="relative cursor-pointer">
-                <img src={familyTravel} alt="Package 1" className="h-72 rounded-lg " />  
+                <OptimizedImage 
+                  src={familyTravel} 
+                  alt="Family holiday travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
             <div className="absolute bottom-0 flex items-center ">
               <h3 className="text-[30px] font-semibold p-5 text-white">Family Holiday</h3>
             </div>
@@ -42,7 +58,12 @@ const TravelPackages = () => {
           </div>
           <div className=" bg-white">
             <div className="relative cursor-pointer">
-                <img src={groupTravel} alt="Package 1" className="h-72 rounded-lg" />  
+                <OptimizedImage 
+                  src={groupTravel} 
+                  alt="Group travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
             <div className="absolute bottom-0 flex items-center ">
               <h3 className="text-[30px] font-semibold p-5 text-white">Group Travel</h3>
             </div>
@@ -50,7 +71,12 @@ const TravelPackages = () => {
           </div>
           <div className=" bg-white">
             <div className="relative cursor-pointer">
-                <img src={soloTravel} alt="Package 1" className="h-72 rounded-lg " />  
+                <OptimizedImage 
+                  src={soloTravel} 
+                  alt="Solo travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
             <div className="absolute bottom-0 flex items-center ">
               <h3 className="text-[30px] font-semibold p-5 text-white">Solo Travels</h3>
             </div>
