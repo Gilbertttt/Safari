@@ -1,7 +1,8 @@
 // src/components/Hero.jsx
 import React from 'react';
-import OptimizedImage from './OptimizedImage';
+import OptimizedVideo from './OptimizedVideo';
 import heroImage from '../assets/images/ChatGPT Image Jun 25, 2025, 12_12_52 AM.png'
+import heroVideo from '../assets/images/2231485-uhd_3840_2160_24fps.mp4'
 
 const Home = () => {
   return (
@@ -11,14 +12,18 @@ const Home = () => {
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-gray-900/40 z-0"></div>
       
-      {/* Background image */}
+      {/* Background video */}
       <div className="absolute inset-0 z-[-1]">
-        <OptimizedImage
-          src={heroImage}
-          alt="Safari travel destination"
-          className="w-full h-full object-cover"
+        <OptimizedVideo
+          src={heroVideo}
+          poster={heroImage}
+          fallbackImage={heroImage}
+          className="w-full h-full"
+          autoPlay={true}
+          muted={true}
+          loop={true}
           priority={true}
-          loading="eager"
+          preload="metadata"
         />
       </div>
       
