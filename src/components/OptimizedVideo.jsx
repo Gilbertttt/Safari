@@ -109,50 +109,22 @@ const OptimizedVideo = ({
       ref={containerRef}
       className={`relative overflow-hidden ${className}`}
     >
-      {/* Loading placeholder */}
-      {!isLoaded && !hasError && (
-        <div className="absolute inset-0 bg-gray-900 flex items-center justify-center">
-          {poster ? (
-            <img 
-              src={poster} 
-              alt="Video poster" 
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className="w-12 h-12 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-          )}
-          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-            <div className="text-white text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-2 mx-auto">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <p className="text-sm">Loading video...</p>
-            </div>
-          </div>
-        </div>
+      {/* Single poster image - always visible when video isn't playing */}
+      {(!isPlaying || hasError) && poster && (
+        <img 
+          src={poster} 
+          alt="Video poster" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       )}
 
-      {/* Error fallback */}
-      {hasError && (
-        <div className="absolute inset-0">
-          <img 
-            src={fallbackImage || poster} 
-            alt="Video fallback" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-      )}
-
-      {/* Video element - only render when in view */}
+      {/* Video element - only render when in view and ready to play */}
       {(isInView || priority) && userPreferenceChecked && (
         <video
           ref={videoRef}
           className={`w-full h-full object-cover transition-opacity duration-500 ${
-            isLoaded && !hasError ? 'opacity-100' : 'opacity-0'
+            isLoaded && !hasError && isPlaying ? 'opacity-100' : 'opacity-0'
           }`}
-          poster={poster}
           muted={muted}
           loop={loop}
           playsInline={playsInline}
@@ -171,39 +143,38 @@ const OptimizedVideo = ({
         </video>
       )}
 
-      {/* User controls overlay */}
-      {isLoaded && !hasError && (
-        <div className="absolute bottom-4 right-4 flex gap-2">
+      {/* Play button overlay - only show when video should be manually played */}
+      {!isPlaying && userPreferenceChecked && (isInView || priority) && (
+        <div className="absolute inset-0 flex items-center justify-center">
           <button
             onClick={togglePlayPause}
-            className="bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-opacity"
-            aria-label={isPlaying ? "Pause video" : "Play video"}
+            className="bg-black bg-opacity-60 text-white p-4 rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-110"
+            aria-label="Play video"
           >
-            {isPlaying ? (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 002 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
-              </svg>
-            ) : (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-              </svg>
-            )}
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+            </svg>
           </button>
+          {!shouldAutoPlay && (
+            <div className="absolute bottom-16 text-center text-white text-sm bg-black bg-opacity-50 px-3 py-1 rounded">
+              Tap to play video
+            </div>
+          )}
         </div>
       )}
 
-      {/* Data saver notice */}
-      {!shouldAutoPlay && userPreferenceChecked && !isPlaying && (
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <div className="text-center text-white p-6 bg-black bg-opacity-50 rounded-lg">
-            <p className="mb-3">Video paused to save data</p>
-            <button
-              onClick={togglePlayPause}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition-colors"
-            >
-              Play Video
-            </button>
-          </div>
+      {/* Pause button - only show when video is playing */}
+      {isPlaying && isLoaded && !hasError && (
+        <div className="absolute bottom-4 right-4">
+          <button
+            onClick={togglePlayPause}
+            className="bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-opacity"
+            aria-label="Pause video"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 002 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
+            </svg>
+          </button>
         </div>
       )}
     </div>
