@@ -1,6 +1,7 @@
 // src/components/Services.jsx
 import React, { useState } from 'react';
 import { FaSafari, FaBinoculars, FaCampground, FaSun } from 'react-icons/fa';
+import OptimizedImage from './OptimizedImage';
 import Airplane from '../assets/images/ross-parmly-rf6ywHVkrlY-unsplash.jpg'
 import planeSeats from '../assets/images/jc-gellidon-1g3qVp7ynX4-unsplash.jpg'
 import flight from '../assets/images/omar-elsharawy-_ONvFZFaUXs-unsplash.jpg'
@@ -195,8 +196,12 @@ const Services = () => {
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 group"
             >
               <div className="h-48 relative">
-             <div  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${service.image})` }}></div>
+                <OptimizedImage
+                  src={service.image}
+                  alt={service.title || "Service image"}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                   <button className="px-4 py-2 bg-white text-amber-600 rounded-md font-medium hover:bg-gray-50 transition-colors">
                     View Details

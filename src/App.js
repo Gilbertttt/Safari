@@ -1,44 +1,67 @@
 // src/App.js
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Navbar from './components/Navbar';
-import Features from './components/Features';
-import Services from './components/Services';
-import Testimonials from './components/Testimonials';
-import Stats from './components/Stats';
-import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import AboutUs from './features/aboutUs.tsx';
-import TravelPackages from './features/travel-packages.tsx';
-import Contact from './features/contact-us.jsx';
+import PerformanceMonitor from './components/PerformanceMonitor';
+
+// Lazy load components for better performance
+const Features = lazy(() => import('./components/Features'));
+const Services = lazy(() => import('./components/Services'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const Stats = lazy(() => import('./components/Stats'));
+const Newsletter = lazy(() => import('./components/Newsletter'));
+const AboutUs = lazy(() => import('./features/aboutUs.tsx'));
+const TravelPackages = lazy(() => import('./features/travel-packages.tsx'));
+const Contact = lazy(() => import('./features/contact-us.jsx'));
+
+// Loading component
+const LoadingSpinner = () => (
+  <div className="flex items-center justify-center min-h-[200px]">
+    <div className="w-8 h-8 border-2 border-orange-500 border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
 
 function App() {
   return (
     <Router>
-         <div className="font-sans overflow-x-hidden scroll-smooth">
-      <Navbar />
-      <Routes>
-      <Route
-      path="/" 
-      element = {
-     <main>
-        <Home />
-        <Features />
-        <Services />
-        <Testimonials />
-        <Stats />
-        <Newsletter />
-      </main>
-      }/>
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/travel-packages" element={<TravelPackages />} />
-          <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </div>
+      <div className="font-sans overflow-x-hidden scroll-smooth">
+        <PerformanceMonitor />
+        <Navbar />
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route
+              path="/" 
+              element={
+                <main>
+                  <Home />
+                  <Suspense fallback={<LoadingSpinner />}>
+                    <Features />
+                  </Suspense>
+                  <Suspense fallback={<LoadingSpinner />}>
+                    <Services />
+                  </Suspense>
+                  <Suspense fallback={<LoadingSpinner />}>
+                    <Testimonials />
+                  </Suspense>
+                  <Suspense fallback={<LoadingSpinner />}>
+                    <Stats />
+                  </Suspense>
+                  <Suspense fallback={<LoadingSpinner />}>
+                    <Newsletter />
+                  </Suspense>
+                </main>
+              }
+            />
+            <Route path="/aboutUs" element={<AboutUs />} />
+            <Route path="/travel-packages" element={<TravelPackages />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+        <Footer />
+      </div>
     </Router>
- 
   );
 }
 
