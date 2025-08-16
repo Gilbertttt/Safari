@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterestP } from 'react-icons/fa';
-import logo from "../assets/images/ChatGPT Image Jun 25, 2025, 12_12_52 AM.png"
+import logo from "../assets/images/logo-SafariTrips.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

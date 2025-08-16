@@ -47,9 +47,6 @@ Single poster image → Video (when playing)
 ### **Slow Connection (2G/3G):**
 ```
 1. Poster loads instantly
-2. Play button shows in center
-3. User clicks to start video
-4. Small "Tap to play video" hint appears
 ```
 
 ### **Data Saver Mode:**

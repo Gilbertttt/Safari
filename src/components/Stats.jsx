@@ -1,6 +1,7 @@
 // src/components/Stats.jsx
 import React from 'react';
 import { FaGlobeAfrica, FaUserFriends, FaStar, FaCalendarAlt } from 'react-icons/fa';
+import tourists from "../assets/images/tourists.jpg"
 
 const Stats = () => {
   const stats = [
@@ -8,6 +9,14 @@ const Stats = () => {
     { icon: <FaUserFriends className="text-3xl text-amber-500" />, value: "5000+", label: "Satisfied Travelers" },
     { icon: <FaStar className="text-3xl text-amber-500" />, value: "98%", label: "Positive Reviews" },
     { icon: <FaCalendarAlt className="text-3xl text-amber-500" />, value: "10+", label: "Years of Experience" }
+  ];
+
+  // Array of 4 images (replace with your actual image imports/paths)
+  const images = [
+    require("../assets/images/woman-working-by-pool.jpg"),
+    require("../assets/images/couples.jpg"),
+    require("../assets/images/family-baggage.jpg"),
+    require("../assets/images/travel-Essentials.jpg"),
   ];
 
   return (
@@ -40,15 +49,15 @@ const Stats = () => {
           </div>
           
           <div className="grid grid-cols-2 gap-4">
-            {[1, 2, 3, 4].map((item) => (
+            {images.map((img, idx) => (
               <div 
-                key={item} 
+                key={idx} 
                 className="bg-white h-64 rounded-xl overflow-hidden group relative"
               >
                 <div 
                   className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                   style={{ 
-                    backgroundImage: `url(https://source.unsplash.com/random/600x800/?safari,${item})` 
+                    backgroundImage: `url(${img})` 
                   }}
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">

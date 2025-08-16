@@ -5,6 +5,11 @@ import groupTravel from "../assets/images/group-travel.jpg"
 import soloTravel from "../assets/images/solo-trips.jpg"
 import honeymoon from "../assets/images/honeymoon.jpg"
 import parentTravel from "../assets/images/parents-travelling.jpg"
+import vacations from "../assets/images/vacations.png"
+import solo from "../assets/images/solo-Travel.jpg"
+import explore from "../assets/images/explore.jpg"
+import visitors from "../assets/images/Visitors.jpg"
+import hotels from "../assets/images/hotels.jpg"
 const TravelPackages = () => {
   return (
     <div>
@@ -20,13 +25,13 @@ const TravelPackages = () => {
           <div className=" bg-white">
             <div className="relative cursor-pointer">
                 <OptimizedImage 
-                  src={parentTravel} 
+                  src={vacations} 
                   alt="Parent trips travel package" 
                   className="h-72 rounded-lg w-full object-cover" 
                   loading="lazy"
                 />  
             <div className="absolute bottom-0 flex items-center ">
-              <h3 className="text-[30px] font-semibold p-5 text-white">Parent Trips</h3>
+              <h3 className="text-[30px] font-semibold p-5 text-white">Vacations</h3>
             </div>
             </div>
           </div>
@@ -72,13 +77,39 @@ const TravelPackages = () => {
           <div className=" bg-white">
             <div className="relative cursor-pointer">
                 <OptimizedImage 
-                  src={soloTravel} 
+                  src={explore} 
                   alt="Solo travel package" 
                   className="h-72 rounded-lg w-full object-cover" 
                   loading="lazy"
                 />  
             <div className="absolute bottom-0 flex items-center ">
               <h3 className="text-[30px] font-semibold p-5 text-white">Solo Travels</h3>
+            </div>
+            </div>
+          </div>
+          <div className=" bg-white">
+            <div className="relative cursor-pointer">
+                <OptimizedImage 
+                  src={hotels} 
+                  alt="Solo travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
+            <div className="absolute bottom-0 flex items-center ">
+              <h3 className="text-[30px] font-semibold p-5 text-white">Hotel Reservation</h3>
+            </div>
+            </div>
+          </div>
+          <div className=" bg-white">
+            <div className="relative cursor-pointer">
+                <OptimizedImage 
+                  src={visitors} 
+                  alt="Solo travel package" 
+                  className="h-72 rounded-lg w-full object-cover" 
+                  loading="lazy"
+                />  
+            <div className="absolute bottom-0 flex items-center ">
+              <h3 className="text-[30px] font-semibold p-5 text-white">Tourist Visas</h3>
             </div>
             </div>
           </div>

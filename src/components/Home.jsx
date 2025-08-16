@@ -1,7 +1,7 @@
 // src/components/Hero.jsx
 import React from 'react';
 import OptimizedVideo from './OptimizedVideo';
-import heroImage from '../assets/images/ChatGPT Image Jun 25, 2025, 12_12_52 AM.png'
+import heroImage from '../assets/images/logo-SafariTrips.png'
 import heroVideo from '../assets/images/2231485-uhd_3840_2160_24fps.mp4'
 
 const Home = () => {

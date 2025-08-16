@@ -104,7 +104,7 @@ const Contact = () => {
                   <div className="text-gray-900 text-xl mr-4 mt-1">📍</div>
                   <div>
                     <h4 className="font-medium mb-1">Our Location</h4>
-                    <p className="text-gray-600">***************************</p>
+                    <p className="text-gray-600">Lagos, Nigeria</p>
                   </div>
                 </div>
                 
@@ -112,7 +112,7 @@ const Contact = () => {
                   <div className="text-gray-900 text-xl mr-4 mt-1">📱</div>
                   <div>
                     <h4 className="font-medium mb-1">Phone Number</h4>
-                    <p className="text-gray-600">*********************************</p>
+                    <p className="text-gray-600">08038551502, 07065315737 </p>
                   </div>
                 </div>
                 
@@ -120,7 +120,7 @@ const Contact = () => {
                   <div className="text-gray-900 text-xl mr-4 mt-1">✉️</div>
                   <div>
                     <h4 className="font-medium mb-1">Email Address</h4>
-                    <p className="text-gray-600">safaritrips@gmail.com</p>
+                    <p className="text-gray-600"> info@safaritrips.com</p>
                   </div>
                 </div>
                 
@@ -128,7 +128,7 @@ const Contact = () => {
                   <div className="text-gray-900 text-xl mr-4 mt-1">🕒</div>
                   <div>
                     <h4 className="font-medium mb-1">Working Hours</h4>
-                    <p className="text-gray-600">Monday - Friday: 9AM - 6PM</p>
+                    <p className="text-gray-600">Monday - Sunday: 8AM - 6PM</p>
                   </div>
                 </div>
               </div>

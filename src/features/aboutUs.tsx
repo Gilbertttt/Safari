@@ -1,3 +1,8 @@
+import familySunset from "../assets/images/family-sunset.jpg";
+import beach from "../assets/images/Beach.png";
+import touristsBox from "../assets/images/tourists-box.jpg";
+import friendsTrip from "../assets/images/friends-trip.jpg";
+import solo from "../assets/images/solo-Travel.jpg";
 import {
   FaMountain,
   FaGlobeAfrica,
@@ -9,11 +14,11 @@ import {
 const AboutUs = () => {
   // Sample images - in a real app, replace with your actual image imports
   const images = [
-    "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    familySunset,
+    beach,
+    touristsBox,
+    friendsTrip,
+    solo,
   ];
 
   return (
@@ -32,22 +37,33 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-                Discover the World with Safari Trips
+                About Us, Safari Trips
               </h3>
 
               <p className="text-gray-600 mb-6">
-               At Safari Trips, we think that travel is much more than just a way to get from one place to another; it's a life-changing event, a compilation of remarkable tales, and a wealth of memories that will last a lifetime. Our agency was established by a group of enthusiastic travelers who shared a passion for travel and cultural exchange with the single objective of revolutionizing the way people see the world.
+              At Safari Trips, we believe travel is far more than just getting from point A to point B it’s a transformative experience, a collection of unforgettable stories, and a treasure trove of lifelong memories. Born from a deep love for exploration and cultural connection,  Safari Trips was founded by a team of passionate travel enthusiasts with one goal in mind: to redefine how you experience the world.
+For over a decade, we have proudly served as a trusted tour, hospitality, and travel partner, offering bespoke travel services to clients across West Africa and the global diaspora. Whether you’re planning your first journey or your fiftieth, we are committed to making every adventure unique, enriching, and worry-free
+
+What We Offer
+Our services are built on a foundation of expertise, global partnerships, and personalized care. We specialize in both inbound and outbound travel, delivering custom itineraries and tour packages that suit a wide range of preferences, budgets, and travel goals — from luxurious getaways to cultural immersions and group adventures.
+
               </p>
 
               <p className="text-gray-600 mb-8">
  <strong>Why Pick Safari Trips? </strong> 
-  <li>🌍 More than a decade of experience providing customized travel options for corporate, family, group, and individual customers</li>
-  <li>✈ All-inclusive travel services, such as reservations for hotels, flights, guided tours, help with visas, and concierge services</li>
-  <li>🤝 Trustworthy international alliances that guarantee seamless coordination across locations</li>
-  <li>💼 Professionalism in Corporate and Leisure Travel to satisfy both personal and professional demands</li>
-  <li>🌳  Africa-based, with a strong local perspective and global reach</li>
+  <li>🌍 Over 10 Years of Experience in delivering tailored travel solutions for individuals, families, groups, and corporate clients</li>
+  <li>✈ Comprehensive Travel Services, including flight bookings, hotel reservations, guided tours, visa assistance, and concierge support
+</li>
+  <li>🤝  Reliable Global Partnerships that ensure smooth coordination across destinations
+</li>
+  <li>💼 Corporate and Leisure Travel Expertise to meet both business and personal needs
+</li>
+  <li>🌳  From the savannahs of East Africa to the streets of Paris or the beaches of Bali — wherever your dream leads, Safari Trips is your passport to a perfectly curated journey.
+</li>
                 </p>
-
+<p className= "text-gray-600 mb-8">
+  Explore the world. Experience the difference. Travel Hassle-free with Safari Trips.
+</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                 <div className="flex flex-col items-center">
                   <FaMountain className="text-3xl text-gray-900 mb-2" />

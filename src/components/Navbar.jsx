@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../assets/images/ChatGPT Image Jun 25, 2025, 12_12_52 AM.png";
+import logo from "../assets/images/logo-SafariTrips.png";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -68,9 +68,10 @@ const Navbar = () => {
             )
           )}
         </div>
-        <button className="ml-4 px-8 py-3 hover:bg-orange-500 bg-gray-900 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-0.5">
+       <a href = "/contact"> <button className="ml-4 px-8 py-3 hover:bg-orange-500 bg-gray-900 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-0.5">
           Book Now
         </button>
+        </a>
       </div>
 
       {/* Mobile Menu Button */}

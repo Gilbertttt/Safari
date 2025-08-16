@@ -143,26 +143,6 @@ const OptimizedVideo = ({
         </video>
       )}
 
-      {/* Play button overlay - only show when video should be manually played */}
-      {!isPlaying && userPreferenceChecked && (isInView || priority) && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <button
-            onClick={togglePlayPause}
-            className="bg-black bg-opacity-60 text-white p-4 rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-110"
-            aria-label="Play video"
-          >
-            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-            </svg>
-          </button>
-          {!shouldAutoPlay && (
-            <div className="absolute bottom-16 text-center text-white text-sm bg-black bg-opacity-50 px-3 py-1 rounded">
-              Tap to play video
-            </div>
-          )}
-        </div>
-      )}
-
       {/* Pause button - only show when video is playing */}
       {isPlaying && isLoaded && !hasError && (
         <div className="absolute bottom-4 right-4">
