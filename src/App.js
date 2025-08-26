@@ -54,9 +54,27 @@ function App() {
                 </main>
               }
             />
-            <Route path="/aboutUs" element={<AboutUs />} />
-            <Route path="/travel-packages" element={<TravelPackages />} />
-            <Route path="/contact" element={<Contact />} />
+
+            <Route path="/aboutUs" 
+            element={
+            <Suspense fallback= {<LoadingSpinner/>}>
+            <AboutUs />
+            </Suspense>
+            } />
+
+            <Route path="/travel-packages" 
+            element={
+            <Suspense fallback= {<LoadingSpinner/>}>
+            <TravelPackages />
+            </Suspense>
+            }/>
+            
+            <Route path="/contact" 
+            element={
+            <Suspense fallback= {<LoadingSpinner/>}>
+            <Contact />
+            </Suspense>
+            } />
           </Routes>
         </Suspense>
         <Footer />
