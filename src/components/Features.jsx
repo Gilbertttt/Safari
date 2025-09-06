@@ -12,7 +12,7 @@ const Features = () => {
     {
       icon: <FaUserFriends className="text-4xl text-amber-500" />,
       title: "Hotel Reservations",
-      description: "Handpicked stays—from luxury resorts to cozy budget lodges."
+      description: "Handpicked stays from luxury resorts to cozy budget lodges."
     },
     {
       icon: <FaShieldAlt className="text-4xl text-amber-500" />,

@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-500 ${
+      className={`fixed w-full z-50 transition-all duration-500 items-center flex justify-center ${
         scrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
       }`}
     >
@@ -68,11 +68,12 @@ const Navbar = () => {
             )
           )}
         </div>
-       <a href = "/contact"> <button className="ml-4 px-8 py-3 hover:bg-orange-500 bg-gray-900 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-0.5">
+       <a href = "/contact"> 
+       <button className="md:block hidden ml-4 px-8 py-3 hover:bg-orange-500 bg-gray-900 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:-translate-y-0.5">
           Book Now
         </button>
         </a>
-      </div>
+     
 
       {/* Mobile Menu Button */}
       <button
@@ -81,7 +82,7 @@ const Navbar = () => {
       >
         {isOpen ? <FiX /> : <FiMenu />}
       </button>
-
+ </div>
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 pt-16">
