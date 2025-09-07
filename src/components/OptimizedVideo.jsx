@@ -92,17 +92,17 @@ const OptimizedVideo = ({
     console.warn('Video failed to load, falling back to poster image');
   };
 
-  const togglePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        videoRef.current.play();
-        setIsPlaying(true);
-      }
-    }
-  };
+  // const togglePlayPause = () => {
+  //   if (videoRef.current) {
+  //     if (isPlaying) {
+  //       videoRef.current.pause();
+  //       setIsPlaying(false);
+  //     } else {
+  //       videoRef.current.play();
+  //       setIsPlaying(true);
+  //     }
+  //   }
+  // };
 
   return (
     <div 
@@ -144,7 +144,7 @@ const OptimizedVideo = ({
       )}
 
       {/* Pause button - only show when video is playing */}
-      {isPlaying && isLoaded && !hasError && (
+      {/* {isPlaying && isLoaded && !hasError && (
         <div className="absolute bottom-4 right-4">
           <button
             onClick={togglePlayPause}
@@ -156,7 +156,7 @@ const OptimizedVideo = ({
             </svg>
           </button>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
